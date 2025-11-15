@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudeep's Portfolio</title>
+
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Inline CSS for animated skills (you can move this to your style.css) -->
+ 
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile_photo.jpg" alt="Profile avatar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="SUDEEP SWAMI">SUDEEP SWAMI</h1>
+          <p class="title">Full Stack Java Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:sudeepswami9503@gmail.com" class="contact-link">sudeepswami9503<br>@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+919503813287" class="contact-link">+91 9503813287</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2005-05-11">May 11, 2005</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Hinjewadi, Pune</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.instagram.com/_sudeep_87?igsh=bXF4NXFtNjd4dzUy" target="_blank" class="social-link" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sudeep-swami-a5164b258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link data-target="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="skills">Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="Project">Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT SECTION -->
+      <article class="about active" data-page="about" id="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Full Stack Java Developer based in Hinjewadi, Pune, passionate about building scalable backend systems and intuitive user interfaces. With a blend of engineering logic, I enjoy turning complex ideas into smooth, functional, and visually appealing digital experiences.
+          </p>
+
+          <p>
+            I specialize in Java, Spring Boot, REST APIs, and modern frontend frameworks. My approach is to write clean and maintainable code while ensuring the final product is user-friendly and aligned with the brand identity. I combine technical expertise with design thinking to deliver complete end-to-end solutions.
+          </p>
+
+          <p>
+            Whether developing backend architectures or designing interfaces, my goal is to create meaningful products that are reliable, fast, and delightful to use.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I Do</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">BACKEND DEVELOPER</h4>
+                <p class="service-item-text">
+                  Make sure the backend works well — everything else follows.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Java Development</h4>
+                <p class="service-item-text">
+                  Spring Boot, microservices, APIs, database design & server-side logic.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <p class="service-item-text">
+                  Responsive and interactive web interfaces using modern JS frameworks.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Brand & Visuals</h4>
+                <p class="service-item-text">
+                  Clean visual identity, graphics and creative enhancements.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+        <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Alard College of enginerring and management hinjewadi,Pune</h4>
+
+              <span>2022 - 2026</span>
+
+              <p class="timeline-text">
+                Pursuing Artificial Intelligence Engineering at Savitribai Phule Pune University.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chatrapati Shivaji Maharaj Junior College of Arts & Science Solapur</h4>
+
+              <span>2020 - 2022</span>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HDHS high school,Solapur</h4>
+
+              <span>2014 - 2020</span>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Technical Skill</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Languages</h4>
+
+              <span>HTML,CSS,Javascript AND ReactJS</span>
+
+              <p class="timeline-text">
+                I am highly passionate about frontend development, where I enjoy designing and building scalable, engaging, and user-friendly interfaces that enhance the overall user experience.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Devloper Tools</h4>
+
+              <span>VS Code</span>
+
+              <p class="timeline-text">
+               
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Libraries</h4>
+
+              <span>reactJS,MySQL</span>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+      <!-- SKILLS SECTION (Moved out as separate page) -->
+      <article class="skills" data-page="skills" id="skills">
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="skill skills-wrapper" aria-label="Skills">
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card animated-skills" aria-hidden="false">
+            <li class="skills-item">
+              <div class="skill-head">
+                <h5 class="h5">HTML</h5>
+                <div class="skill-percent" data-target="90">0%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 0%;" data-target="90"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="skill-head">
+                <h5 class="h5">CSS</h5>
+                <div class="skill-percent" data-target="85">0%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 0%;" data-target="85"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="skill-head">
+                <h5 class="h5">JavaScript</h5>
+                <div class="skill-percent" data-target="80">0%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 0%;" data-target="80"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="skill-head">
+                <h5 class="h5">ReactJS</h5>
+                <div class="skill-percent" data-target="85">0%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 0%;" data-target="85"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- PROJECT SECTION -->
+      <article class="Project" data-page="Project" id="Project">
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+          <h3 class="h3 project-title">Projects</h3>
+
+          <div class="projects-grid">
+
+            <!-- Project Card 1 -->
+            <div class="project-card">
+              <div class="project-img-box">
+                <img src="./assets/images/Screenshot 2025-11-14 095954.png" alt="Project 1">
+              </div>
+              <div class="project-content">
+                <h4 class="project-name">मिठाइयों की दुनिया</h4>
+                <p class="project-desc">Your one-stop shop for sweet treats and traditional indian desserts. (HTML,CSS,JAVASCRIPT)</p>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+              <div class="project-img-box">
+                <img src="./assets/images/Screenshot 2025-11-14 185139.png" alt="ALibaba E-commerce">
+              </div>
+              <div class="project-content">
+                <h4 class="project-name">Alibaba E-commerce website</h4>
+                <p class="project-desc">Shopping platform with the product you dreamed of (HTML,CSS,JAVASCRIPT,ReactJS)</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+
+      <!-- CONTACT SECTION -->
+      <article class="contact" data-page="contact" id="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="contactForm" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button id="formSendBtn" class="form-btn" type="submit" disabled data-form-btn aria-disabled="true">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+            <p id="formStatus" style="margin-top:12px; font-size:0.95rem; display:none;"></p>
+          </form>
+        </section>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Inline script for nav + form behavior -->
+  <script>
+    (function () {
+      /* NAVIGATION: switch pages */
+      const navLinks = document.querySelectorAll('[data-nav-link]');
+      const pages = document.querySelectorAll('[data-page]');
+
+      function clearActive() {
+        navLinks.forEach(n => n.classList.remove('active'));
+        pages.forEach(p => p.classList.remove('active'));
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          const target = link.getAttribute('data-target');
+          if (!target) return;
+          clearActive();
+          link.classList.add('active');
+          const page = document.querySelector(`[data-page="${target}"]`);
+          if (page) page.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+
+      // Ensure initial state: first nav link active -> its page active
+      (function initNav() {
+        const initial = document.querySelector('[data-nav-link].active') || navLinks[0];
+        if (initial) {
+          const t = initial.getAttribute('data-target') || 'about';
+          clearActive();
+          initial.classList.add('active');
+          const p = document.querySelector(`[data-page="${t}"]`);
+          if (p) p.classList.add('active');
+        }
+      })();
+
+      /* FORM: enable submit when fields valid + handle mailto submit */
+      const form = document.getElementById('contactForm');
+      const sendBtn = document.getElementById('formSendBtn');
+      const statusEl = document.getElementById('formStatus');
+
+      function isEmailValid(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function validate() {
+        const fullname = document.getElementById('fullname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const ok = fullname && email && message && isEmailValid(email);
+        sendBtn.disabled = !ok;
+        sendBtn.setAttribute('aria-disabled', String(!ok));
+      }
+
+      // listen to inputs
+      document.querySelectorAll('[data-form-input]').forEach(el => {
+        el.addEventListener('input', validate);
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const fullname = encodeURIComponent(document.getElementById('fullname').value.trim());
+        const email = encodeURIComponent(document.getElementById('email').value.trim());
+        const message = encodeURIComponent(document.getElementById('message').value.trim());
+        const recipient = 'sudeepswami9503@gmail.com'; // your email
+        const subject = encodeURIComponent('Portfolio contact from ' + decodeURIComponent(fullname));
+        const body = encodeURIComponent(`Name: ${decodeURIComponent(fullname)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(message)}`);
+        const mailto = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        // attempt to open mail client
+        window.location.href = mailto;
+
+        // show feedback
+        statusEl.style.display = 'block';
+        statusEl.style.color = '#2e7d32';
+        statusEl.textContent = 'Attempting to open your mail client. If it does not open, copy-paste this email: ' + recipient;
+      });
+
+      // in case of autofill
+      window.addEventListener('load', validate);
+    })();
+  </script>
+
+  <!-- Skill animation script -->
+  <script>
+    // Animated skill percentages - triggers when in viewport.
+    (function () {
+      const skillsList = document.querySelector('.skills-list.animated-skills');
+      if (!skillsList) return;
+
+      const fills = skillsList.querySelectorAll('.skill-bar-fill');
+      const counters = skillsList.querySelectorAll('.skill-percent');
+
+      // animate a single counter from 0 to target
+      function animateCounter(el, target, duration = 1400) {
+        const start = 0;
+        const range = target - start;
+        const startTime = performance.now();
+
+        function step(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3); // ease-out
+          const current = Math.floor(start + ease * range);
+          el.textContent = current + '%';
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      // animate fills to width
+      function animateFill(el, target, duration = 1600) {
+        el.style.transition = `width ${duration}ms cubic-bezier(.2,.9,.2,1)`;
+        requestAnimationFrame(() => {
+          el.style.width = target + '%';
+        });
+      }
+
+      // Trigger when the skills section enters the viewport
+      let triggered = false;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !triggered) {
+            triggered = true;
+            skillsList.classList.add('revealed');
+
+            fills.forEach(fill => {
+              const t = parseInt(fill.getAttribute('data-target'), 10) || 0;
+              animateFill(fill, t);
+            });
+
+            counters.forEach(counter => {
+              const t = parseInt(counter.getAttribute('data-target'), 10) || 0;
+              animateCounter(counter, t);
+            });
+
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.35 });
+
+      observer.observe(skillsList);
+
+      // Fallback: animate on load if IntersectionObserver not available
+      if (!('IntersectionObserver' in window)) {
+        window.addEventListener('load', () => {
+          fills.forEach(fill => animateFill(fill, parseInt(fill.dataset.target, 10) || 0));
+          counters.forEach(counter => animateCounter(counter, parseInt(counter.dataset.target, 10) || 0));
+          skillsList.classList.add('revealed');
+        });
+      }
+    })();
+  </script>
+
+  <!-- optional: your external site script (keep if used) -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
